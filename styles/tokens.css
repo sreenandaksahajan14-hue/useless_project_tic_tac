@@ -1,0 +1,37 @@
+/* Noir & Paper Scrap Design System Tokens */
+:root {
+  /* Noir Dark Environment */
+  --noir-void: #09090b;
+  --noir-desk: #131316;
+  --noir-surface: #1c1c22;
+  --noir-border: #2c2c36;
+
+  /* Paper Scraps & Newsprint */
+  --paper-newsprint: #f3ede2;
+  --paper-aged: #e7dfce;
+  --paper-card: #ded4bf;
+  --paper-edge: #c8bca6;
+
+  /* Inks & Annotations */
+  --ink-black: #121214;
+  --ink-faded: #4a463f;
+  --ink-red: #c92a2a;
+  --ink-red-dark: #961b1b;
+  --highlighter-yellow: #fcc419;
+  --tape-evidence: #fab005;
+  --redacted-bar: #08080a;
+
+  /* Typography */
+  --font-headline: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-typewriter: 'Special Elite', 'Courier New', monospace;
+  --font-mono: 'DM Mono', Consolas, Monaco, monospace;
+
+  /* Paper & Cutout Effects */
+  --paper-shadow: 4px 5px 0px rgba(0, 0, 0, 0.7);
+  --paper-shadow-sm: 2px 3px 0px rgba(0, 0, 0, 0.6);
+  --paper-shadow-hover: 6px 8px 0px rgba(0, 0, 0, 0.85);
+
+  /* Transitions */
+  --trans-quick: 0.15s ease;
+  --trans-paper: 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}

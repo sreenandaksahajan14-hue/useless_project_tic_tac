@@ -1,0 +1,244 @@
+/* Noir Courtroom Inquest & Tribunal Styles */
+
+.tribunal-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 10, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tribunal-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Aged Legal Document Case File */
+.tribunal-shell {
+  background: var(--paper-newsprint);
+  color: var(--ink-black);
+  border: 3px solid var(--ink-black);
+  box-shadow: 8px 10px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 2px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  font-family: var(--font-typewriter);
+  transform: rotate(-0.5deg);
+}
+
+.tribunal-tape {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 140px;
+  height: 28px;
+  background: rgba(250, 176, 5, 0.7);
+  border: 1px dashed rgba(18, 18, 20, 0.4);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+
+.tribunal-header {
+  text-align: center;
+  border-bottom: 2px solid var(--ink-black);
+  padding-bottom: 1rem;
+}
+
+.court-docket {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-red);
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.court-title {
+  font-family: var(--font-headline);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin: 0.25rem 0;
+}
+
+.court-title span {
+  color: var(--ink-red);
+  font-style: italic;
+}
+
+.gavel-animation-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.gavel-icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  transform-origin: bottom right;
+}
+
+.gavel-slam {
+  animation: gavel-smash 0.45s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+@keyframes gavel-smash {
+  0% { transform: rotate(-50deg); }
+  60% { transform: rotate(12deg); }
+  80% { transform: rotate(-4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.tribunal-section {
+  background: var(--paper-aged);
+  border: 1px solid var(--ink-black);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--ink-red);
+  text-transform: uppercase;
+  border-bottom: 1px dashed var(--ink-faded);
+  padding-bottom: 0.25rem;
+}
+
+.exhibit-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px dotted var(--paper-edge);
+}
+
+.exhibit-count {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--ink-red);
+}
+
+.defense-statement {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--ink-faded);
+  line-height: 1.45;
+}
+
+/* Rubber Stamp Verdict */
+.verdict-stamp-box {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.verdict-stamp {
+  display: inline-block;
+  color: var(--ink-red);
+  border: 5px solid var(--ink-red);
+  padding: 0.6rem 2rem;
+  font-family: var(--font-headline);
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transform: rotate(-6deg);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  animation: stamp-slam 0.35s cubic-bezier(0.15, 1, 0.3, 1);
+}
+
+@keyframes stamp-slam {
+  0% { transform: scale(2.8) rotate(15deg); opacity: 0; }
+  100% { transform: scale(1) rotate(-6deg); opacity: 1; }
+}
+
+.verdict-explanation {
+  margin-top: 0.8rem;
+  font-size: 0.88rem;
+  color: var(--ink-faded);
+  line-height: 1.4;
+}
+
+/* Job Offer Settlement */
+.settlement-card {
+  background: #fff;
+  border: 2px dashed var(--tape-evidence);
+  padding: 1rem;
+  text-align: center;
+}
+
+.settlement-title {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ink-red);
+  letter-spacing: 1px;
+}
+
+.settlement-desc {
+  font-size: 0.85rem;
+  color: var(--ink-black);
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+/* Tribunal Buttons */
+.tribunal-actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.btn-stamp-primary {
+  background: var(--ink-black);
+  color: var(--paper-newsprint);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  padding: 0.75rem 1.4rem;
+  border: 2px solid var(--ink-black);
+  cursor: pointer;
+  box-shadow: var(--paper-shadow-sm);
+  transition: var(--trans-quick);
+}
+
+.btn-stamp-primary:hover {
+  background: var(--ink-red);
+  color: #fff;
+}
+
+.btn-stamp-secondary {
+  background: var(--paper-aged);
+  color: var(--ink-black);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  padding: 0.75rem 1.2rem;
+  border: 2px solid var(--ink-black);
+  cursor: pointer;
+  box-shadow: var(--paper-shadow-sm);
+  transition: var(--trans-quick);
+}
+
+.btn-stamp-secondary:hover {
+  background: var(--highlighter-yellow);
+}
