@@ -139,14 +139,12 @@ Not applicable — no physical hardware was used.
 
 # Video
 
-[Add your demo video link here]
 
-*The video demonstrates a complete playthrough of TIC-TAC-CHEAT, including the rigged gameplay, cheating events, evidence collection, legal counter-measures, and the final Grand Courtroom Tribunal.*
+https://drive.google.com/file/d/1aMZweV53rCVBWmVt74hm7FR8A9fOeGlF/view?usp=drive_link
 
 # Additional Demos
-
-* [Add GitHub Repository Link]
-* [Add Live Demo Link if available]
+https://github.com/sreenandaksahajan14-hue/useless_project_tic_tac
+https://drive.google.com/file/d/1aMZweV53rCVBWmVt74hm7FR8A9fOeGlF/view?usp=drive_link
 * [Add any other demo/material link]
 
 ## Team Contributions
