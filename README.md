@@ -115,7 +115,8 @@ and prepare to lose. 💀
 ### For Software:
 
 # Screenshots
-
+<img width="1280" height="640" alt="git (1)" src="https://github.com/sreenandaksahajan14-hue/useless_project_tic_tac/blob/main/useless1.png"/>
+<img width="1280" height="640" alt="git (1)" src="https://github.com/sreenandaksahajan14-hue/useless_project_tic_tac/blob/main/useless2.png"/>
 
 
 # Diagrams
